@@ -179,7 +179,7 @@ ul {
     justify-content: space-between;
     height: 70px;
 }
-[data-theme="dark"] .nav-container
+[data-theme="dark"] .site-header
 {
     background-color: #26282e9d;
 }
