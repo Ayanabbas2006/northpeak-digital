@@ -2,7 +2,7 @@
 
 A modern, fully responsive one-page website built for a fictional digital agency, **NorthPeak Digital**. Developed with vanilla web technologies, featuring a clean aesthetic, accessible components, and robust client-side form validation.
 
-🌐 **Live Demo:** [View Live Site](#) *(Replace with your Netlify/Vercel URL)*
+🌐 **Live Demo:** https://northpeak-digital-nu.vercel.app/
 
 ---
 
