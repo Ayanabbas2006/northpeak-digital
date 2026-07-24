@@ -18,7 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const serviceInput = document.getElementById('service');
     const messageInput = document.getElementById('message');
     const formSuccess = document.getElementById('formSuccess');
+    const themeToggle = document.getElementById('themeToggle');
+    const htmlElement = document.documentElement;
 
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    htmlElement.setAttribute('data-theme', savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        htmlElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
     const setError = (element, message) => {
         element.classList.add('error');
         const errorDisplay = document.getElementById(`${element.id}Error`);
