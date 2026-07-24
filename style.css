@@ -22,7 +22,7 @@
     --bg-main: #0f172a;
     --bg-alt: #1e293b;
     --text-main: #f8fafc;
-    --text-muted: #94a3b8;
+    --text-muted: #989ca2;
     --border: #334155;
     --card-bg: #1e293b;
     --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
@@ -82,6 +82,9 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary);
+    scroll-snap-type: proximity;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: var(--text-main);
     background-color: var(--bg-main);
@@ -176,7 +179,10 @@ ul {
     justify-content: space-between;
     height: 70px;
 }
-
+[data-theme="dark"] .nav-container
+{
+    background-color: #26282e9d;
+}
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
